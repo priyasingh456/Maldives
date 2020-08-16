@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Maldives</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+  <body>
+    <div class="background">
+      <video autoplay loop muted plays-inline id="video">
+          <source src="video/maldives.mp4" type="video/mp4">
+      </video>
+      <div class="logo">
+        <img src="https://cdn4.iconfinder.com/data/icons/aviation-cobalt/512/travel_globe_airplane_plane_international_flight_world_transportation-256.png">
+        <h4>Global Tourism</h4>
+      </div>
+      <div class="sidebar">
+        <div class="text">
+          <h1>GOLDEN RESORT</h1>
+          <h4>LUXURY LIVING</h4>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Maldives</h1>
+        <p>Very nice appartments in the heart of Maldives</p>
+        <div class="button" id="playbtn">
+          <img src="http://icons.iconarchive.com/icons/icons-land/play-stop-pause/256/Play-Normal-icon.png" id="icon">Watch Video
+      </div>
+      
+    </div>
+
+    <script>
+        var video=document.getElementById('video');
+        var playbtn=document.getElementById('playbtn');
+        var icon=document.getElementById('icon');
+
+        playbtn.onclick=function(){
+         video.style.display="block";
+   
+         if(video.paused){
+          video.play();
+          icon.src="http://consultantsmind.files.wordpress.com/2012/04/player-pause.png";
+         }
+         else{
+          video.pause();
+          icon.src="http://icons.iconarchive.com/icons/icons-land/play-stop-pause/256/Play-Normal-icon.png";
+         }
+        }
+    </script>
+  </body>
+</html>
